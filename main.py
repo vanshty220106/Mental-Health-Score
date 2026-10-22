@@ -103,6 +103,7 @@ def serve_js():
 
 
 @app.get('/api/health')
+@app.get('/health')
 def health_check():
     return {
         "status": "healthy",
@@ -118,6 +119,7 @@ def health_check():
 
 
 @app.get('/api/sample-student')
+@app.get('/sample-student')
 def sample_student():
     if df_dataset is None or len(df_dataset) == 0:
         raise HTTPException(status_code=404, detail="Dataset not loaded")
@@ -144,6 +146,7 @@ def sample_student():
 
 
 @app.post('/predict', response_model=PredictionResponse)
+@app.post('/api/predict', response_model=PredictionResponse)
 def predict(data: StudentData):
     country_group = data.country if data.country in top_countries else "Other"
 
