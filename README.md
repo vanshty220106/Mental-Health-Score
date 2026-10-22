@@ -6,6 +6,9 @@
 [![Pandas](https://img.shields.io/badge/pandas-3.1+-150458.svg?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+> 🚀 **Live Deployment**: **[https://montana-hoped-yeast-ricky.trycloudflare.com](https://montana-hoped-yeast-ricky.trycloudflare.com)**  
+> 📖 **Interactive Swagger API Docs**: **[https://montana-hoped-yeast-ricky.trycloudflare.com/docs](https://montana-hoped-yeast-ricky.trycloudflare.com/docs)**
+
 An end-to-end Machine Learning web application and REST API designed to evaluate, understand, and predict student mental wellness scores based on digital habits, sleep cycles, academic study patterns, and lifestyle stress indicators.
 
 Powered by a **Random Forest Regressor Pipeline** achieving an **$R^2$ score of 0.95** with a **Mean Absolute Error (MAE) under 0.19 points** across a comprehensive dataset of 5,000 students.
