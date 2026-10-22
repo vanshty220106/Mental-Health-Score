@@ -1,6 +1,9 @@
 import random
+import warnings
 from pathlib import Path
 from typing import Literal
+
+warnings.filterwarnings('ignore')
 
 import joblib
 import pandas as pd
@@ -11,6 +14,9 @@ from pydantic import BaseModel, Field
 import uvicorn
 
 BASE_DIR = Path(__file__).resolve().parent
+if not (BASE_DIR / 'Mental_Health_Model.pkl').exists() and (BASE_DIR.parent / 'Mental_Health_Model.pkl').exists():
+    BASE_DIR = BASE_DIR.parent
+
 MODEL_PATH = BASE_DIR / 'Mental_Health_Model.pkl'
 DATASET_PATH = BASE_DIR / 'Student Social Media And Mental Health Impact.csv'
 
