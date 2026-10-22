@@ -5,9 +5,11 @@
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.9+-F7931E.svg?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Pandas](https://img.shields.io/badge/pandas-3.1+-150458.svg?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black.svg?logo=vercel&logoColor=white)](https://mental-health-score-indol.vercel.app)
 
-> 🚀 **Live Deployment**: **[https://montana-hoped-yeast-ricky.trycloudflare.com](https://montana-hoped-yeast-ricky.trycloudflare.com)**  
-> 📖 **Interactive Swagger API Docs**: **[https://montana-hoped-yeast-ricky.trycloudflare.com/docs](https://montana-hoped-yeast-ricky.trycloudflare.com/docs)**
+> 🚀 **Vercel Production Deployment**: **[https://mental-health-score-indol.vercel.app](https://mental-health-score-indol.vercel.app)**  
+> 📖 **Interactive Swagger API Docs**: **[https://mental-health-score-indol.vercel.app/docs](https://mental-health-score-indol.vercel.app/docs)**  
+> 📊 **Live Health & Dataset Metrics**: **[https://mental-health-score-indol.vercel.app/api/health](https://mental-health-score-indol.vercel.app/api/health)**
 
 An end-to-end Machine Learning web application and REST API designed to evaluate, understand, and predict student mental wellness scores based on digital habits, sleep cycles, academic study patterns, and lifestyle stress indicators.
 
