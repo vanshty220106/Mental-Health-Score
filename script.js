@@ -333,7 +333,7 @@
 
     try {
       let res = null;
-      let activeUrl = `${API_BASE}/predict`;
+      let activeUrl = `${API_BASE}/api/predict`;
 
       try {
         res = await fetch(activeUrl, {
@@ -341,6 +341,14 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         });
+        if (res.status === 404) {
+          activeUrl = `${API_BASE}/predict`;
+          res = await fetch(activeUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+        }
       } catch (localErr) {
         // If primary URL is unreachable and we have a fallback, try fallback
         if (API_BASE !== FALLBACK_API) {
